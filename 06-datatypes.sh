@@ -6,4 +6,4 @@ N1=$1
 N2=$2
 
 NUM=$(($N1+$N2))
-echo " adding 2 numbers = $NUM"
+echo " adding 2 numbers = $NUM "
