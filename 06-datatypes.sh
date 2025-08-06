@@ -2,8 +2,8 @@
 
 #Addition of 2 numbers
 
-n1=$1
-n2=$2
+N1=$1
+N2=$2
 
-num=$($n1+$n2)
-echo " adding 2 numbers = $num"
+NUM=$($n1+$n2)
+echo " adding 2 numbers = $NUM"
