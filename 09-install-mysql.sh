@@ -29,6 +29,7 @@ then
     else
         echo "Nginx installation is SUCCESS"
         exit 1
+    fi
 else
     echo "Nginx is already installed"
 fi
