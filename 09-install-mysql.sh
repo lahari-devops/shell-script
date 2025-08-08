@@ -22,8 +22,13 @@ dnf list installed nginx
 if [ $? -ne 0 ]
 then
     dnf install nginxxx -y
-    echo "Nginx installation success"
-    exit 1
+    if [ $? -ne 0 ]
+    then 
+        echo "Nginx installation is FAILED"
+        exit 1
+    else
+        echo "Nginx installation is SUCCESS"
+        exit 1
 else
     echo "Nginx is already installed"
 fi
