@@ -12,18 +12,18 @@ dnf list installed mysql
 if [ $? -ne 0 ]
 then
     dnf install mysql -y
-    echo "Mysql is installation success"
+    echo "Mysql installation success"
     exit 1
 else
     echo "Mysql  is already installed"
 fi
 
-dnf list installed git
+dnf list installed nginx
 if [ $? -ne 0 ]
 then
-    dnf install gittt -y
-    echo "Git is installation sucess"
+    dnf install nginxxx -y
+    echo "Nginx installation success"
     exit 1
 else
-    echo "Git is already installed"
+    echo "Nginx is already installed"
 fi
