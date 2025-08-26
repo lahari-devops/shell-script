@@ -6,6 +6,7 @@ NUM3=$3
 
 echo "Number of variables passed : $#"
 echo "All the variables passed : $@"
+echo "Running script is : $0"
 echo "Present working directory is : $PWD"
 echo "Which user is running this script : $USER"
 echo "Home directory of current user : $HOME"
