@@ -1,14 +1,16 @@
 #!/bin/bash
 
-# echo "Please proceed with credentials"
-# echo "Please enter your name: "
-# read -s USERNAME
-# echo "Please enter your password: "
-# read -s PASSWORD
+# VAR1=$1
+# VAR2=$2
+
+# echo "$VAR1 :: Hi $VAR2"
+# echo "$VAR2 :: Hello ${VAR1}"
 
 
-echo "Please enter credential steps" 
-echo "Enter your name: "
-read USERNAME
-echo "Enter Password: "
-read PASSWORD
+VAR1=$1
+VAR2=$2
+
+echo "$VAR1 :: Hi $VAR2"
+echo "$VAR2 :: Hello $VAR1"
+echo "$VAR1 :: How are you doing"
+echo "$VAR2 :: Great" 
