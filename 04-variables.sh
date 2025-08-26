@@ -9,6 +9,6 @@
 
 echo "Please enter credential steps" 
 echo "Enter your name: "
-read -s USERNAME
+read USERNAME
 echo "Enter Password: "
-read -s PASSWORD
+read PASSWORD
