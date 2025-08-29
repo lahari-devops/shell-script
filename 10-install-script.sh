@@ -1,6 +1,6 @@
 #!/bin/bash
 
-USERID=$(id -u)
+USERID=$(id -u) #Root users id will be 0 if not the user is other than root user
 
 if [ $USERID -ne 0 ]
 then 
@@ -12,8 +12,13 @@ dnf list installed mysql
 if [ $? -ne 0 ]
 then
     dnf install mysql -y
-    echo "Mysql installation success"
-    exit 1
+    if [ $? -ne 0 ]
+    then 
+        echo "Installing Mysql...FAILURE"
+        exit 1
+    else
+        echo "Installing Mysql...SUCCESS"
+    fi
 else
     echo "Mysql  is already installed"
 fi
