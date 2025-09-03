@@ -2,6 +2,8 @@
 
 MSG="SCRIPT1"
 GREET="Hi from SCRIPT-1"
+
+echo "$MSG"
 source ./21-script-2.sh
 
 echo "Hello from: $MSG"
