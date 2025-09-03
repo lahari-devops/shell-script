@@ -11,10 +11,10 @@ do
     # echo "usage : $USAGE and partition : $PARTITION"
     if [ $USAGE -ge $DISK_THRESHOLD ]
     then 
-        MSG+="High disk usage on partion: $PARTITION with usage: $USAGE \n"
+        MSG+="High disk usage on partition: $PARTITION with usage: $USAGE \n "
     fi
 done <<< $DISK_USAGE
 
 echo -e "Messege : $MSG"
 
-echo "This is a test mail & Date $(date)" | mutt -s "message" laharidevsecops@gmail.com
+echo "$MSG" | mutt -s "High disk Usage" laharidevsecops@gmail.com
